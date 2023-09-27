@@ -1,0 +1,9 @@
+@font-face {
+    font-family: 'TYZyingbikai';
+    src: url('TYZyingbikai.woff2') format('woff2'),
+        url('TYZyingbikai.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+

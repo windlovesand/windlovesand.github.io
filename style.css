@@ -1,0 +1,10 @@
+@font-face {
+    font-family: "tyzZiti";
+    src: url(田英章硬笔楷书简体.ttf) format('truetype');
+}
+  
+p {
+    font-family: "tyzZiti";
+    /*font-family: TYZyingbikai;*/
+    color: black;
+}
