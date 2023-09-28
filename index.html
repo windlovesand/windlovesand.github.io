@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -14,19 +15,87 @@
         v2.0 | 20110126
         License: none (public domain)
         */
-        html, body, div, span, applet, object, iframe,
-        h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-        a, abbr, acronym, address, big, cite, code,
-        del, dfn, em, img, ins, kbd, q, s, samp,
-        small, strike, strong, sub, sup, tt, var,
-        b, u, i, center,
-        dl, dt, dd, ol, ul, li,
-        fieldset, form, label, legend,
-        table, caption, tbody, tfoot, thead, tr, th, td,
-        article, aside, canvas, details, embed,
-        figure, figcaption, footer, header, hgroup,
-        menu, nav, output, ruby, section, summary,
-        time, mark, audio, video {
+        html,
+        body,
+        div,
+        span,
+        applet,
+        object,
+        iframe,
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6,
+        p,
+        blockquote,
+        pre,
+        a,
+        abbr,
+        acronym,
+        address,
+        big,
+        cite,
+        code,
+        del,
+        dfn,
+        em,
+        img,
+        ins,
+        kbd,
+        q,
+        s,
+        samp,
+        small,
+        strike,
+        strong,
+        sub,
+        sup,
+        tt,
+        var,
+        b,
+        u,
+        i,
+        center,
+        dl,
+        dt,
+        dd,
+        ol,
+        ul,
+        li,
+        fieldset,
+        form,
+        label,
+        legend,
+        table,
+        caption,
+        tbody,
+        tfoot,
+        thead,
+        tr,
+        th,
+        td,
+        article,
+        aside,
+        canvas,
+        details,
+        embed,
+        figure,
+        figcaption,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        output,
+        ruby,
+        section,
+        summary,
+        time,
+        mark,
+        audio,
+        video {
             margin: 0;
             padding: 0;
             border: 0;
@@ -34,34 +103,55 @@
             font: inherit;
             vertical-align: baseline;
         }
+
         /* HTML5 display-role reset for older browsers */
-        article, aside, details, figcaption, figure,
-        footer, header, hgroup, menu, nav, section {
+        article,
+        aside,
+        details,
+        figcaption,
+        figure,
+        footer,
+        header,
+        hgroup,
+        menu,
+        nav,
+        section {
             display: block;
         }
+
         body {
             line-height: 1;
         }
-        ol, ul {
+
+        ol,
+        ul {
             list-style: none;
         }
-        blockquote, q {
+
+        blockquote,
+        q {
             quotes: none;
         }
-        blockquote:before, blockquote:after,
-        q:before, q:after {
+
+        blockquote:before,
+        blockquote:after,
+        q:before,
+        q:after {
             content: '';
             content: none;
         }
+
         table {
             border-collapse: collapse;
             border-spacing: 0;
         }
+
         /* demo styles */
         body {
             background: #f0f0f0;
             color: #000;
         }
+
         .page {
             background: #fff;
             width: 920px;
@@ -69,6 +159,7 @@
             padding: 20px 20px 0 20px;
             overflow: hidden;
         }
+
         .font-container {
             overflow-x: auto;
             margin-bottom: 40px;
@@ -76,6 +167,7 @@
             white-space: nowrap;
             padding-bottom: 5px;
         }
+
         h1 {
             position: relative;
             background: #444;
@@ -84,46 +176,67 @@
             padding: 10px 20px;
             margin: 0 -20px 12px -20px;
         }
+
         .letters {
             font-size: 25px;
             margin-bottom: 20px;
         }
+
         .s10:before {
             content: '10px';
         }
+
         .s11:before {
             content: '11px';
         }
+
         .s12:before {
             content: '12px';
         }
+
         .s14:before {
             content: '14px';
         }
+
         .s18:before {
             content: '18px';
         }
+
         .s24:before {
             content: '24px';
         }
+
         .s30:before {
             content: '30px';
         }
+
         .s36:before {
             content: '36px';
         }
+
         .s48:before {
             content: '48px';
         }
+
         .s60:before {
             content: '60px';
         }
+
         .s72:before {
             content: '72px';
         }
-        .s10:before, .s11:before, .s12:before, .s14:before,
-        .s18:before, .s24:before, .s30:before, .s36:before,
-        .s48:before, .s60:before, .s72:before {
+
+        .s10:before,
+        .s11:before,
+        .s12:before,
+        .s14:before,
+        .s18:before,
+        .s24:before,
+        .s30:before,
+        .s36:before,
+        .s48:before,
+        .s60:before,
+        .s72:before {
             font-family: Arial, sans-serif;
             font-size: 10px;
             font-weight: normal;
@@ -131,6 +244,7 @@
             color: #999;
             padding-right: 6px;
         }
+
         /* responsive */
         @media (max-width: 959px) {
             .page {
@@ -140,47 +254,49 @@
         }
     </style>
 </head>
-<body>
-<div class="page">
-    <div class="demo">
-        <h1 style="font-family: 'TYZyingbikai'; font-weight: normal; font-style: normal;">第十章</h1>
-        <div style="font-family: 'TYZyingbikai'; font-size: 30px; font-weight: normal; font-style: normal; line-height: 1.3;">
-            <pre >
-载营魄抱一，能无离乎？
-专气致柔，能如婴儿乎？
-涤除玄鉴，能如疵乎？
-爱国治民，能无为乎？
-天门开阖，能为雌乎？
-明白四达，能无知乎？</pre>
-        </div>
-        <h1 style="font-family: 'TYZyingbikai'; font-weight: normal; font-style: normal;">第十一章</h1>
-        <div style="font-family: 'TYZyingbikai'; font-size: 30px; font-weight: normal; font-style: normal; line-height: 1.3;">
-            <pre >
-三十辐，共一毂，当其无，有车之用。
-埏埴以为器，当其无，有器之用。
-凿户牖以为室，当其无，有室之用。
-故有之以为利，无之以为用。</pre>
-        </div>
-        <h1 style="font-family: 'TYZyingbikai'; font-weight: normal; font-style: normal;">第十二章</h1>
-        <div style="font-family: 'TYZyingbikai'; font-size: 30px; font-weight: normal; font-style: normal; line-height: 1.3;">
-            <pre >
-五色令人目盲；
-五音令人耳聋；
-五味令人口爽；
-驰骋畋猎，令人心发狂；
-难得之货，令人行妨。
-是以圣人为腹不为目，故去彼取此。</pre>
-        </div>
-        <h1 style="font-family: 'TYZyingbikai'; font-weight: normal; font-style: normal;">第十三章</h1>
-        <div style="font-family: 'TYZyingbikai'; font-size: 30px; font-weight: normal; font-style: normal; line-height: 1.3;">
-            <pre >
-宠辱若惊，贵大患若身。
-何谓宠辱若惊？宠为下，得之若惊，失之若惊，是谓宠辱若惊。
-何谓贵大患若身？吾所以有大患者，为吾有身，及吾无身，吾有何患？
-故贵以身为天下，若可寄天下；爱以身为天下，若可托天下。</pre>
-        </div>                        
-    </div>
 
-</div>
+<body>
+    <div class="page">
+        <div class="demo">
+            <h1 style="font-family: 'TYZyingbikai'; font-weight: normal; font-style: normal;">第十章</h1>
+            <div
+                style="font-family: 'TYZyingbikai'; font-size: 30px; font-weight: normal; font-style: normal; line-height: 1.3;">
+                <p>载营魄抱一，能无离乎？</p>
+                <p>专气致柔，能如婴儿乎？</p>
+                <p>涤除玄鉴，能如疵乎？</p>
+                <p>爱国治民，能无为乎？</p>
+                <p>天门开阖，能为雌乎？</p>
+                <p>明白四达，能无知乎？</p>
+            </div>
+            <h1 style="font-family: 'TYZyingbikai'; font-weight: normal; font-style: normal;">第十一章</h1>
+            <div
+                style="font-family: 'TYZyingbikai'; font-size: 30px; font-weight: normal; font-style: normal; line-height: 1.3;">
+                <p>三十辐，共一毂，当其无，有车之用。</p>
+                <p>埏埴以为器，当其无，有器之用。</p>
+                <p>凿户牖以为室，当其无，有室之用。</p>
+                <p>故有之以为利，无之以为用。</p>
+            </div>
+            <h1 style="font-family: 'TYZyingbikai'; font-weight: normal; font-style: normal;">第十二章</h1>
+            <div
+                style="font-family: 'TYZyingbikai'; font-size: 30px; font-weight: normal; font-style: normal; line-height: 1.3;">
+                <p>五色令人目盲；</p>
+                <p>五音令人耳聋；</p>
+                <p>五味令人口爽；</p>
+                <p>驰骋畋猎，令人心发狂；</p>
+                <p>难得之货，令人行妨。</p>
+                <p>是以圣人为腹不为目，故去彼取此。</p>
+            </div>
+            <h1 style="font-family: 'TYZyingbikai'; font-weight: normal; font-style: normal;">第十三章</h1>
+            <div
+                style="font-family: 'TYZyingbikai'; font-size: 30px; font-weight: normal; font-style: normal; line-height: 1.3;">
+                <p>宠辱若惊，贵大患若身。</p>
+                <p>何谓宠辱若惊？宠为下，得之若惊，失之若惊，是谓宠辱若惊。</p>
+                <p>何谓贵大患若身？吾所以有大患者，为吾有身，及吾无身，吾有何患？</p>
+                <p>故贵以身为天下，若可寄天下；爱以身为天下，若可托天下。</p>
+            </div>
+        </div>
+
+    </div>
 </body>
+
 </html>
