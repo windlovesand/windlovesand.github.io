@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>UTF-8 Code Point List</title>
+  </head>
+  <body>
+    <p id="myParagraph">Hello, 你好</p>
+    <ul id="codePointList"></ul>
+
+    <script>
+      // Get the <p> element
+      const paragraph = document.getElementById("myParagraph");
+
+      // Get the <ul> element where we will append the <li> elements
+      const codePointList = document.getElementById("codePointList");
+
+      // Check if the paragraph element exists
+      if (paragraph) {
+        // Get the text content of the paragraph
+        const textContent = paragraph.textContent;
+        // Loop through each character in the text
+        for (let i = 0; i < textContent.length; i++) {
+          // Create a new <li> element
+          const listItem = document.createElement("li");
+
+          // Set the text content of the <li> element to the current character
+          listItem.textContent = textContent[i];
+
+          // Append the <li> element to the <ul> element
+          codePointList.appendChild(listItem);
+        }
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,367 @@
+<!DOCTYPE html>
+<!-- saved from url=(0029)https://www.an2.net/zi/zi.php -->
+<html lang="zh">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+    <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+    <title>田字格字帖生成器 - 网址：www.an2.net</title>
+    <style>
+      @font-face {
+        font-family: "TYZyingbikai";
+        src: url("TYZyingbikai.woff2") format("woff2");
+      }
+
+      @font-face {
+        font-family: "web-ukai";
+        src: url("/zi/images/UKaiCN.woff2") format("woff2"),
+          url("/zi/images/UKaiCN.woff") format("woff");
+      }
+
+      body,
+      div,
+      p,
+      ul,
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+      }
+
+      div {
+        width: 938px;
+        margin: 0 auto;
+        padding-left: 2px;
+      }
+
+      li {
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        font-family: "楷体", "楷体_gb2312", "Kaiti SC", "STKaiti",
+          "AR PL UKai CN", "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE",
+          "AR PL KaitiM GB", "KaiTi", "KaiTi_GB2312", "DFKai-SB", "TW\-Kai",
+          "web-fz";
+        font-size: 58px;
+        text-align: center;
+        line-height: 80px;
+        margin: 5px 0px 5px -2px;
+      }
+
+      li.svg {
+        line-height: 68px;
+      }
+
+      li svg {
+        magin: 8px;
+        vertical-align: middle;
+      }
+
+      .afterpage {
+        page-break-before: always;
+      }
+
+      .page-head {
+        height: 116px;
+        line-height: 136px;
+        font-size: 32px;
+        text-align: center;
+        display: none;
+      }
+
+      .f {
+        background: url(bg12.svg) center center no-repeat;
+        color: rgb(0, 0, 0);
+        font-family: TYZyingbikai;
+      }
+
+      @media print {
+        .afterpage {
+          page-break-before: always;
+        }
+
+        .page-head {
+          display: block;
+        }
+
+        body {
+          -webkit-print-color-adjust: exact;
+          -moz-print-color-adjust: exact;
+          -ms-print-color-adjust: exact;
+          print-color-adjust: exact;
+        }
+
+        blockquote {
+          display: none;
+        }
+      }
+
+      @page {
+        size: auto;
+        margin: 5mm 16mm 5mm 16mm;
+      }
+    </style>
+  </head>
+
+  <body style="zoom: 1">
+    <div class="page-head" style="color: rgb(102, 102, 102)">
+      田字格字帖生成器 网址：www.an2.net
+    </div>
+
+    <div class="zi-page">
+      <ul>
+        <li class="f">朱</li>
+        <li class="f">碧</li>
+        <li class="f">岑</li>
+        <li class="f">朱</li>
+        <li class="f">碧</li>
+        <li class="f">岑</li>
+        <li class="f">朱</li>
+        <li class="f">碧</li>
+        <li class="f">岑</li>
+        <li class="f">朱</li>
+        <li class="f">碧</li>
+        <li class="f">岑</li>
+        <li class="f">朱</li>
+        <li class="f">碧</li>
+        <li class="f">岑</li>
+        <li class="f">朱</li>
+        <li class="f">碧</li>
+        <li class="f">岑</li>
+      </ul>
+    </div>
+    <div style="display: none">
+      <script src="https://hm.baidu.com/hm.js?26806bf65928ca10b21fdd33824e109f"></script>
+      <script>
+        var _hmt = _hmt || [];
+        (function () {
+          var hm = document.createElement("script");
+          hm.src = "//hm.baidu.com/hm.js?26806bf65928ca10b21fdd33824e109f";
+          var s = document.getElementsByTagName("script")[0];
+          s.parentNode.insertBefore(hm, s);
+        })();
+      </script>
+      <!-- Global site tag (gtag.js) - Google Analytics -->
+      <script
+        async=""
+        src="https://www.googletagmanager.com/gtag/js?id=UA-149669904-1"
+      ></script>
+      <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() {
+          dataLayer.push(arguments);
+        }
+        gtag("js", new Date());
+
+        gtag("config", "UA-149669904-1");
+      </script>
+    </div>
+    <div id="page-head-box" style="display: none">
+      <div class="page-head" style="color: rgb(102, 102, 102)">
+        田字格字帖生成器 网址：www.an2.net
+      </div>
+    </div>
+    <script
+      type="text/javascript"
+      src="./田字格字帖生成器 - 网址：www.an2.net_files/jquery-1.9.0.min.js.下载"
+    ></script>
+    <script type="text/javascript">
+      function render() {
+        $("body").prepend($("#page-head-box").html());
+        $(".afterpage").prepend($("#page-head-box").html());
+        let herderColor = "#666666";
+        $(".page-head").css("color", herderColor);
+
+        let hzColor = "#b8b8b8";
+        let hzFirstColor = "#000";
+        let fontFamily = "";
+        let hzBg = "url(bg12.svg) center center no-repeat";
+        let pyBg = "url(/zi/images/pyb2.svg)  center center repeat-x";
+
+        $("li").css("background", hzBg);
+        $("li").css("color", hzColor);
+        $("li.f").css("color", hzFirstColor);
+        $("li").css("font-family", fontFamily + $("li").css("font-family"));
+
+        let typem = "7";
+        if (parseInt(typem) === 20) {
+          $("li:not(.f)").css("color", "#ffffff");
+          $("li:not(.f)").css(
+            "text-shadow",
+            "1px 1px #b8b8b8, -1px -1px #b8b8b8,1px -1px #b8b8b8, -1px 1px #b8b8b8"
+          );
+        }
+      }
+
+      render();
+      window.onload = function () {
+        setTimeout(function () {
+          window.print();
+        }, 1000);
+      };
+      const LINE_NUM = 12;
+
+      const pageStyles = {
+        v: [12, 15, 116, 136],
+        h: [12, 7, 80, 92],
+      };
+      const FILL_TAIL = "1";
+      const HAS_PY = false;
+      const CAN_CHANGE_PAGE_SIZE = true;
+    </script>
+
+    <style>
+      #print-tools {
+        width: 80px;
+        position: fixed;
+        top: 180px;
+        right: 0px;
+        font-size: 13px;
+      }
+
+      #print-tools span,
+      #print-tools select {
+        width: 60px;
+        text-align: center;
+        display: block;
+        padding: 8px 10px;
+        background: #efefef;
+        border-radius: 6px;
+        border: 1px dashed #cccccc;
+        cursor: pointer;
+      }
+
+      #print-tools .change_page_style {
+        display: none;
+        width: auto;
+      }
+
+      #print-tools .print,
+      #print-tools .change_page_style {
+        margin-top: 36px;
+      }
+    </style>
+
+    <blockquote id="print-tools">
+      <span class="flip">水平翻转</span>
+      <select class="change_page_style" style="display: inline-block">
+        <option value="v">竖 版</option>
+        <option value="h">横 版</option>
+      </select>
+      <span class="print">打 印</span>
+    </blockquote>
+    <script type="text/javascript">
+      if (CAN_CHANGE_PAGE_SIZE) {
+        $("#print-tools .change_page_style").show();
+      }
+
+      $("#print-tools .flip").click(function (node, child) {
+        $("ul").each(function (index, domUl) {
+          let arr = [];
+          $(domUl)
+            .children("li")
+            .each(function (indexLi, domLi) {
+              let last;
+              if ((indexLi + 1) % LINE_NUM === 0) {
+                while (arr.length > 0) {
+                  let ele = arr.pop();
+                  if (arr.length === LINE_NUM - 2) {
+                    last = ele;
+                  }
+                  $(ele).insertBefore($(domLi));
+                }
+                $(domLi).insertBefore($(last));
+              } else {
+                arr.push(domLi);
+              }
+            });
+        });
+      });
+      $("#print-tools .print").click(function () {
+        window.print();
+      });
+
+      function fillEmptyLine(lineNum, columnNum, hasPy) {
+        if (lineNum == 0) {
+          return;
+        }
+        for (i = 0; i < lineNum; i++) {
+          $(".zi-page-new").last().append($("<ul></ul>"));
+          for (j = 0; j < columnNum; j++) {
+            let fill = hasPy
+              ? '<li><span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span></li>'
+              : '<li class="svg">&nbsp;</li>';
+            $(".zi-page-new ul").last().append($(fill));
+          }
+        }
+      }
+
+      $("#print-tools .change_page_style").change(function () {
+        let pageStyle = $(this).val();
+        $(".afterpage").remove();
+        $(".page-head").first().remove();
+        let pageStyleData =
+          pageStyle in pageStyles ? pageStyles[pageStyle] : pageStyles["h"];
+        let zi = $("ul li");
+        $("body").append($('<div class="zi-page-new"><ul></ul></div'));
+        let PageZiNum = pageStyleData[0] * pageStyleData[1];
+        let lineNum = 0;
+        for (i = 1; i <= zi.length; i++) {
+          if (
+            i % pageStyleData[0] === 1 &&
+            (zi[i - 1].innerHTML === "" ||
+              zi[i - 1].innerHTML.indexOf("&nbsp;") !== -1)
+          ) {
+            $(".zi-page-new ul").last().remove();
+            break;
+          }
+          let curLine = $(".zi-page-new ul").last();
+          curLine.append(zi[i - 1]);
+
+          if (i === zi.length) {
+            continue;
+          }
+          if (i % pageStyleData[0] === 0) {
+            $(".zi-page-new").last().append($("<ul></ul>"));
+            lineNum++;
+          }
+
+          if (i % PageZiNum === 0) {
+            $("body").append(
+              $('<div class="afterpage"></div><div class="zi-page-new"></div')
+            );
+            $(".zi-page-new").last().append($("<ul></ul>"));
+            lineNum = 0;
+          }
+        }
+        if (lineNum === 0) {
+          $(".afterpage").last().remove();
+          $(".zi-page-new").last().remove();
+        } else if (FILL_TAIL === "1") {
+          fillEmptyLine(pageStyleData[1] - lineNum, pageStyleData[0], HAS_PY);
+        }
+        $(".zi-page").remove();
+        $(".zi-page-new").addClass("zi-page").removeClass("zi-page-new");
+
+        render();
+        $(".page-head")
+          .css("height", pageStyleData[2] + "px")
+          .css("line-height", pageStyleData[3] + "px");
+        window.print();
+      });
+    </script>
+
+    <deepl-input-controller
+      ><template shadowrootmode="open">
+        <link
+          rel="stylesheet"
+          href="chrome-extension://cofdbpoegempjloogbagkncekinflcnj/build/content.css"
+        />
+        <div>
+          <div class="dl-input-translation-container svelte-ju4595">
+            <div></div>
+          </div>
+        </div> </template
+    ></deepl-input-controller>
+  </body>
+</html>
