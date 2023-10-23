@@ -283,8 +283,33 @@
 
 <body>
   <div class="page">
-    <h1>第二十五章</h1>
+    <h1>第三十章</h1>
     <div>
+      <p>以道佐人主者，不以兵强天下。其事好远。师之所处，荆棘生焉。大军之后，必有凶年。善有果而已，不以取强。果而勿矜，果而勿伐，果而勿骄。果而不得已，果而勿强。物壮则老，是谓不道，不道早已。</p>
+    </div>
+    <h1>第二十九章</h1>
+    <div>
+      <p>将欲取天下而为之，吾见其不得已。天下神器，不可为也，不可执也。为者败之，执者失之。是以圣人无为，故无败；无执，故无失。夫物或行或随；或嘘或吹；或强或羸；或载或隳。是以圣人去甚，去奢，去泰。</p>
+    </div>
+    <h1>第二十八章</h1>
+    <div>
+      <p>知其雄，守其雌，为天下溪。为天下溪，常德不离，复归于婴儿。知其白，守其辱，为天下谷。为天下谷，常德乃足，复归于朴。知其白，守其黑，为天下式。为天下式，常德不忒，复归于无极。朴散则为器，圣人用之，则为官长，故大智不割。</p>
+    </div>
+    <h1>第二十七章</h1>
+    <div>
+      <p>
+        善行无辙迹，善言无瑕谪；善数不用筹策；善闭无关楗而不可开，善结无绳约而不可解。是以圣人常善救人，故无弃人；常善救物，故无弃物。是谓袭明。故善人者，不善人之师；不善人者，善人之资。不贵其师，不爱其资，虽智大迷，是谓要妙。
+      </p>
+    </div>
+    <h1>第二十六章</h1>
+    <div>
+      <p>
+        重为轻根，静为躁君。是以君子终日行不离辎重。虽有荣观，燕处超然。奈何万乘之主，而以身轻天下？轻则失根，躁则失君。
+      </p>
+    </div>
+    <h1>第二十五章</h1>
+    <button id="printSection1">Print Section 1</button>
+    <div id="section1">
       <p>
         有物混成，先天地生。寂兮寥兮，独立而不改，周行而不殆，可以为天地母。吾不知其名，强字之曰道，强为之名曰大。大曰逝，逝曰远，远曰反。故道大，天大，地大，人亦大。域中有四大，而人居其一焉。人法地，地法天，天法道，道法自然。
       </p>
@@ -410,6 +435,20 @@
       }
       paragraph.parentNode.replaceChild(ul, paragraph);
     });
+    const printButton = document.getElementById(`printSection1`);
+    printButton.addEventListener("click", () => {
+      const sectionName = `section1`;
+      const sectionContent = document.getElementById('section1').innerHTML
+      if (sectionContent) {
+        // Create a new window or iframe for printing
+        const printWindow = window.open("", "_blank");
+        printWindow.document.open();
+        printWindow.document.write(`${sectionContent}`);
+        printWindow.document.close();
+        printWindow.print();
+        printWindow.close();
+      }
+    });    
   </script>
 </body>
 
