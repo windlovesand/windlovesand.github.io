@@ -1,455 +1,514 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
-  <meta charset="utf-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="robots" content="noindex, noarchive" />
-  <meta name="format-detection" content="telephone=no" />
-  <title>道德经</title>
-  <link href="stylesheet.css" rel="stylesheet" />
-  <style>
-    /*
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, noarchive" />
+    <meta name="format-detection" content="telephone=no" />
+    <title>道德经</title>
+    <link href="stylesheet.css" rel="stylesheet" />
+    <style>
+      /*
         http://meyerweb.com/eric/tools/css/reset/
         v2.0 | 20110126
         License: none (public domain)
         */
-    html,
-    body,
-    div,
-    span,
-    applet,
-    object,
-    iframe,
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6,
-    p,
-    blockquote,
-    pre,
-    a,
-    abbr,
-    acronym,
-    address,
-    big,
-    cite,
-    code,
-    del,
-    dfn,
-    em,
-    img,
-    ins,
-    kbd,
-    q,
-    s,
-    samp,
-    small,
-    strike,
-    strong,
-    sub,
-    sup,
-    tt,
-    var,
-    b,
-    u,
-    i,
-    center,
-    dl,
-    dt,
-    dd,
-    ol,
-    ul,
-    li,
-    fieldset,
-    form,
-    label,
-    legend,
-    table,
-    caption,
-    tbody,
-    tfoot,
-    thead,
-    tr,
-    th,
-    td,
-    article,
-    aside,
-    canvas,
-    details,
-    embed,
-    figure,
-    figcaption,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    output,
-    ruby,
-    section,
-    summary,
-    time,
-    mark,
-    audio,
-    video {
-      margin: 0;
-      padding: 0;
-      border: 0;
-      font-size: 100%;
-      font: inherit;
-      vertical-align: baseline;
-    }
-
-    /* HTML5 display-role reset for older browsers */
-    article,
-    aside,
-    details,
-    figcaption,
-    figure,
-    footer,
-    header,
-    hgroup,
-    menu,
-    nav,
-    section {
-      display: block;
-    }
-
-    body {
-      line-height: 1;
-    }
-
-    ol,
-    ul {
-      list-style: none;
-    }
-
-    blockquote,
-    q {
-      quotes: none;
-    }
-
-    blockquote:before,
-    blockquote:after,
-    q:before,
-    q:after {
-      content: "";
-      content: none;
-    }
-
-    table {
-      border-collapse: collapse;
-      border-spacing: 0;
-    }
-
-    /* demo styles */
-    body {
-      background: #f0f0f0;
-      color: #000;
-    }
-
-    .page {
-      background: #fff;
-      width: 920px;
-      margin: 0 auto;
-      padding: 20px 20px 0 20px;
-      overflow: hidden;
-    }
-
-    .font-container {
-      overflow-x: auto;
-      margin-bottom: 40px;
-      line-height: 1.3;
-      white-space: nowrap;
-      padding-bottom: 5px;
-    }
-
-    h1 {
-      position: relative;
-      background: #444;
-      font-size: 32px;
-      color: #fff;
-      padding: 10px 20px;
-      margin: 0 -20px 12px -20px;
-    }
-
-    .letters {
-      font-size: 25px;
-      margin-bottom: 20px;
-    }
-
-    .s10:before {
-      content: "10px";
-    }
-
-    .s11:before {
-      content: "11px";
-    }
-
-    .s12:before {
-      content: "12px";
-    }
-
-    .s14:before {
-      content: "14px";
-    }
-
-    .s18:before {
-      content: "18px";
-    }
-
-    .s24:before {
-      content: "24px";
-    }
-
-    .s30:before {
-      content: "30px";
-    }
-
-    .s36:before {
-      content: "36px";
-    }
-
-    .s48:before {
-      content: "48px";
-    }
-
-    .s60:before {
-      content: "60px";
-    }
-
-    .s72:before {
-      content: "72px";
-    }
-
-    .s10:before,
-    .s11:before,
-    .s12:before,
-    .s14:before,
-    .s18:before,
-    .s24:before,
-    .s30:before,
-    .s36:before,
-    .s48:before,
-    .s60:before,
-    .s72:before {
-      font-family: Arial, sans-serif;
-      font-size: 10px;
-      font-weight: normal;
-      font-style: normal;
-      color: #999;
-      padding-right: 6px;
-    }
-
-    /* responsive */
-    @media (max-width: 959px) {
-      .page {
-        width: auto;
+      html,
+      body,
+      div,
+      span,
+      applet,
+      object,
+      iframe,
+      h1,
+      h2,
+      h3,
+      h4,
+      h5,
+      h6,
+      p,
+      blockquote,
+      pre,
+      a,
+      abbr,
+      acronym,
+      address,
+      big,
+      cite,
+      code,
+      del,
+      dfn,
+      em,
+      img,
+      ins,
+      kbd,
+      q,
+      s,
+      samp,
+      small,
+      strike,
+      strong,
+      sub,
+      sup,
+      tt,
+      var,
+      b,
+      u,
+      i,
+      center,
+      dl,
+      dt,
+      dd,
+      ol,
+      ul,
+      li,
+      fieldset,
+      form,
+      label,
+      legend,
+      table,
+      caption,
+      tbody,
+      tfoot,
+      thead,
+      tr,
+      th,
+      td,
+      article,
+      aside,
+      canvas,
+      details,
+      embed,
+      figure,
+      figcaption,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      output,
+      ruby,
+      section,
+      summary,
+      time,
+      mark,
+      audio,
+      video {
         margin: 0;
+        padding: 0;
+        border: 0;
+        font-size: 100%;
+        font: inherit;
+        vertical-align: baseline;
       }
-    }
 
-    .page div {
-      font-family: "TYZyingbikai";
-      font-size: 30px;
-      font-weight: normal;
-      font-style: normal;
-      line-height: 1.3;
-    }
+      /* HTML5 display-role reset for older browsers */
+      article,
+      aside,
+      details,
+      figcaption,
+      figure,
+      footer,
+      header,
+      hgroup,
+      menu,
+      nav,
+      section {
+        display: block;
+      }
 
-    .page h1 {
-      font-family: "TYZyingbikai";
-      font-weight: normal;
-      font-style: normal;
-    }
+      body {
+        line-height: 1;
+      }
 
-    .page div li {
-      background: url(bg12.svg) center center no-repeat;
-      color: rgb(0, 0, 0);
-      display: inline-block;
-      width: 80px;
-      height: 80px;
-      font-size: 58px;
-      text-align: center;
-      line-height: 80px;
-      margin: 5px 0px 5px -2px;
-    }
-  </style>
-</head>
+      ol,
+      ul {
+        list-style: none;
+      }
 
-<body>
-  <div class="page">
-    <h1>第三十章</h1>
-    <div>
-      <p>以道佐人主者，不以兵强天下。其事好远。师之所处，荆棘生焉。大军之后，必有凶年。善有果而已，不以取强。果而勿矜，果而勿伐，果而勿骄。果而不得已，果而勿强。物壮则老，是谓不道，不道早已。</p>
-    </div>
-    <h1>第二十九章</h1>
-    <div>
-      <p>将欲取天下而为之，吾见其不得已。天下神器，不可为也，不可执也。为者败之，执者失之。是以圣人无为，故无败；无执，故无失。夫物或行或随；或嘘或吹；或强或羸；或载或隳。是以圣人去甚，去奢，去泰。</p>
-    </div>
-    <h1>第二十八章</h1>
-    <div>
-      <p>知其雄，守其雌，为天下溪。为天下溪，常德不离，复归于婴儿。知其白，守其辱，为天下谷。为天下谷，常德乃足，复归于朴。知其白，守其黑，为天下式。为天下式，常德不忒，复归于无极。朴散则为器，圣人用之，则为官长，故大智不割。</p>
-    </div>
-    <h1>第二十七章</h1>
-    <div>
-      <p>
-        善行无辙迹，善言无瑕谪；善数不用筹策；善闭无关楗而不可开，善结无绳约而不可解。是以圣人常善救人，故无弃人；常善救物，故无弃物。是谓袭明。故善人者，不善人之师；不善人者，善人之资。不贵其师，不爱其资，虽智大迷，是谓要妙。
-      </p>
-    </div>
-    <h1>第二十六章</h1>
-    <div>
-      <p>
-        重为轻根，静为躁君。是以君子终日行不离辎重。虽有荣观，燕处超然。奈何万乘之主，而以身轻天下？轻则失根，躁则失君。
-      </p>
-    </div>
-    <h1>第二十五章</h1>
-    <button id="printSection1">Print Section 1</button>
-    <div id="section1">
-      <p>
-        有物混成，先天地生。寂兮寥兮，独立而不改，周行而不殆，可以为天地母。吾不知其名，强字之曰道，强为之名曰大。大曰逝，逝曰远，远曰反。故道大，天大，地大，人亦大。域中有四大，而人居其一焉。人法地，地法天，天法道，道法自然。
-      </p>
-    </div>
-    <h1>第二十四章</h1>
-    <div>
-      <p>企者不立；跨者不行；自见者不明；自是者不彰；自伐者无功；自矜者不长。其在道也，曰：馀食赘形。物或恶之，故有道者不处。</p>
-    </div>
-    <h1>第二十三章</h1>
-    <div>
-      <p>希言自然。故飘风不终朝，骤雨不终日。孰为此者？天地。天地尚不能久，而况于人乎？故从事于道者，同于道；德者，同于德；失者，同于失。同于道者，道亦乐得之；同于德者，德亦乐得之；同于失者，失亦乐得之。信不足焉，有不信焉。</p>
-    </div>
+      blockquote,
+      q {
+        quotes: none;
+      }
 
-    <h1>第二十二章</h1>
-    <div>
-      <p>曲则全，枉则直，洼则盈，敝则新，少则多，多则惑。是以圣人抱一为天下式。不自见，故明；不自是，故彰；不自伐，故有功；不自矜，故长。夫唯不争，故天下莫能与之争。古之所谓“曲则全”者，岂虚言哉！诚全而归之。</p>
-    </div>
-    <h1>第二十一章</h1>
-    <div>
-      <p>孔德之容，惟道是从。道之为物，惟恍惟惚。惚兮恍兮，其中有象；恍兮惚兮，其中有物。窈兮冥兮，其中有精；其精甚真，其中有信。自今及古，其名不去，以阅众甫。吾何以知众甫之状哉？以此。</p>
-    </div>
+      blockquote:before,
+      blockquote:after,
+      q:before,
+      q:after {
+        content: "";
+        content: none;
+      }
 
-    <h1>第二十章</h1>
-    <div>
-      <p>唯之与阿，相去几何？美之与恶，相去若何？人之所畏，不可不畏。</p>
-      <p>荒兮，其未央哉！众人熙熙，如享太牢，如春登台。</p>
-      <p>我独泊兮，其未兆；沌沌兮，如婴儿之未孩；累累兮，若无所归。</p>
-      <p>众人皆有馀，而我独若遗。我愚人之心也哉！俗人昭昭，我独昏昏。</p>
-      <p>俗人察察，我独闷闷。众人皆有以，而我独顽且鄙。我独异于人，而贵食母。</p>
-    </div>
-    <h1>第十九章</h1>
-    <div>
-      <p>绝圣弃智，民利百倍；绝仁弃义，民复孝慈；绝巧弃利，盗贼无有。此三者以为文，不足。故令有所属：见素抱朴，少思寡欲，绝学无忧。</p>
-    </div>
-    <h1>第十八章</h1>
-    <div>
-      <p>大道废，有仁义；智慧出，有大伪；六亲不和，有孝慈；国家昏乱，有忠臣。</p>
-    </div>
-    <h1>第十七章</h1>
-    <div>
-      <p>太上，不知有之；其次，亲而誉之；其次，畏之；其次，侮之。信不足焉，有不信焉。</p>
-      <p>悠兮其贵言。功成事遂，百姓皆谓：“我自然”。</p>
-      <h1>第十六章</h1>
-    </div>
-    <div>
-      <p>致虚极，守静笃。</p>
-      <p>万物并作，吾以观复。</p>
-      <p>
-        夫物芸芸，各复归其根。归根曰静，静曰复命。复命曰常，知常曰明。不知常，妄作凶。
-      </p>
-      <p>知常容，容乃公，公乃全，全乃天，天乃道，道乃久，没身不殆。</p>
-    </div>
-    <h1>第十五章</h1>
-    <div>
-      <p>
-        古之善为道者，微妙玄通，深不可识。夫唯不可识，故强为之容：豫兮若冬涉川；犹兮若畏四邻；俨兮其若客；涣兮其若凌释；敦兮其若朴；旷兮其若谷；混兮其若浊；澹兮其若海；兮若无止。
-      </p>
-      <ul></ul>
-      <p>孰能浊以静之徐清？孰能安以动之徐生？</p>
-      <p>保此道者，不欲盈。夫唯不盈，故能蔽而新成。</p>
-    </div>
-    <h1>第十四章</h1>
-    <div>
-      <p>
-        视之不见，名曰夷；听之不闻，名曰希；搏之不得，名曰微。此三者不可致诘，故混而为一。其上不皦，其下不昧。绳绳兮不可名，复归于物。是谓无状之状，无物之象，是谓惚恍。迎之不见其首，随之不见其后。
-      </p>
-      <p>执古之道，以御今之有。能知古始，是谓道纪。</p>
-    </div>
-    <h1>第十三章</h1>
-    <div>
-      <p>宠辱若惊，贵大患若身。</p>
-      <p>何谓宠辱若惊？宠为下，得之若惊，失之若惊，是谓宠辱若惊。</p>
-      <p>何谓贵大患若身？吾所以有大患者，为吾有身，及吾无身，吾有何患？</p>
-      <p>故贵以身为天下，若可寄天下；爱以身为天下，若可托天下。</p>
-    </div>
-    <h1>第十二章</h1>
-    <div>
-      <p>五色令人目盲；</p>
-      <p>五音令人耳聋；</p>
-      <p>五味令人口爽；</p>
-      <p>驰骋畋猎，令人心发狂；</p>
-      <p>难得之货，令人行妨。</p>
-      <p>是以圣人为腹不为目，故去彼取此。</p>
-    </div>
-    <h1>第十一章</h1>
-    <div>
-      <p>三十辐，共一毂，当其无，有车之用。</p>
-      <p>埏埴以为器，当其无，有器之用。</p>
-      <p>凿户牖以为室，当其无，有室之用。</p>
-      <p>故有之以为利，无之以为用。</p>
-    </div>
-    <h1>第十章</h1>
-    <div>
-      <p>载营魄抱一，能无离乎？</p>
-      <p>专气致柔，能如婴儿乎？</p>
-      <p>涤除玄鉴，能如疵乎？</p>
-      <p>爱国治民，能无为乎？</p>
-      <p>天门开阖，能为雌乎？</p>
-      <p>明白四达，能无知乎？</p>
-    </div>
-    <h1>你是风儿我是沙</h1>
-  </div>
-  <script>
-    // Get the <p> element
-    var div = document.querySelector(".page");
-    var paragraphs = div.querySelectorAll("p");
+      table {
+        border-collapse: collapse;
+        border-spacing: 0;
+      }
 
-    paragraphs.forEach(function (paragraph) {
-      // Get the text content of the paragraph
-      const textContent = paragraph.textContent;
-      var ul = document.createElement("ul");
-      // Loop through each character in the text
-      for (let i = 0; i < textContent.length; i++) {
-        // Create a new <li> element
-        const listItem = document.createElement("li");
+      /* demo styles */
+      body {
+        background: #f0f0f0;
+        color: #000;
+      }
 
-        if (textContent[i].trim().length != 0) {
-          // Set the text content of the <li> element to the current character
-          listItem.textContent = textContent[i];
-          // Append the <li> element to the <ul> element
-          ul.appendChild(listItem);
+      .page {
+        background: #fff;
+        width: 920px;
+        margin: 0 auto;
+        padding: 20px 20px 0 20px;
+        overflow: hidden;
+      }
+
+      .font-container {
+        overflow-x: auto;
+        margin-bottom: 40px;
+        line-height: 1.3;
+        white-space: nowrap;
+        padding-bottom: 5px;
+      }
+
+      h1 {
+        position: relative;
+        background: #444;
+        font-size: 32px;
+        color: #fff;
+        padding: 10px 20px;
+        margin: 0 -20px 12px -20px;
+      }
+
+      .letters {
+        font-size: 25px;
+        margin-bottom: 20px;
+      }
+
+      .s10:before {
+        content: "10px";
+      }
+
+      .s11:before {
+        content: "11px";
+      }
+
+      .s12:before {
+        content: "12px";
+      }
+
+      .s14:before {
+        content: "14px";
+      }
+
+      .s18:before {
+        content: "18px";
+      }
+
+      .s24:before {
+        content: "24px";
+      }
+
+      .s30:before {
+        content: "30px";
+      }
+
+      .s36:before {
+        content: "36px";
+      }
+
+      .s48:before {
+        content: "48px";
+      }
+
+      .s60:before {
+        content: "60px";
+      }
+
+      .s72:before {
+        content: "72px";
+      }
+
+      .s10:before,
+      .s11:before,
+      .s12:before,
+      .s14:before,
+      .s18:before,
+      .s24:before,
+      .s30:before,
+      .s36:before,
+      .s48:before,
+      .s60:before,
+      .s72:before {
+        font-family: Arial, sans-serif;
+        font-size: 10px;
+        font-weight: normal;
+        font-style: normal;
+        color: #999;
+        padding-right: 6px;
+      }
+
+      /* responsive */
+      @media (max-width: 959px) {
+        .page {
+          width: auto;
+          margin: 0;
         }
       }
-      paragraph.parentNode.replaceChild(ul, paragraph);
-    });
-    const printButton = document.getElementById(`printSection1`);
-    printButton.addEventListener("click", () => {
-      const sectionName = `section1`;
-      const sectionContent = document.getElementById('section1').innerHTML
-      if (sectionContent) {
-        // Create a new window or iframe for printing
-        const printWindow = window.open("", "_blank");
-        printWindow.document.open();
-        printWindow.document.write(`${sectionContent}`);
-        printWindow.document.close();
-        printWindow.print();
-        printWindow.close();
-      }
-    });    
-  </script>
-</body>
 
+      .page div {
+        font-family: "TYZyingbikai";
+        font-size: 30px;
+        font-weight: normal;
+        font-style: normal;
+        line-height: 1.3;
+      }
+
+      .page h1 {
+        font-family: "TYZyingbikai";
+        font-weight: normal;
+        font-style: normal;
+      }
+
+      .page div li {
+        background: url(bg12.svg) center center no-repeat;
+        color: rgb(0, 0, 0);
+        display: inline-block;
+        width: 80px;
+        height: 80px;
+        font-size: 58px;
+        text-align: center;
+        line-height: 80px;
+        margin: 5px 0px 5px -2px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="page">
+      <h1>第三十五章</h1>
+      <div>
+        <p>
+          将欲歙之，必故张之；将欲弱之，必故强之；将欲废之，必故兴之；将欲取之，必故与之。是谓微明。
+          柔弱胜刚强。鱼不可脱于渊，国之利器不可以示人。
+        </p>
+      </div>
+      <h1>第三十四章</h1>
+      <div>
+        <p>
+          大道泛兮，其可左右。万物恃之以生而不辞，功成而不有。衣养万物而不为主，可名于小；万物归焉而不为主，可名为大。以其终不自为大，故能成其大。
+        </p>
+      </div>
+      <h1>第三十三章</h1>
+      <div>
+        <p>
+          知人者智，自知者明。 胜人者有力，自胜者强。 知足者富。 强行者有志。
+          不失其所者久。 死而不亡者寿。
+        </p>
+      </div>
+      <h1>第三十二章</h1>
+      <div>
+        <p>
+          道常无名朴。虽小，天下莫能臣。侯王若能守之，万物将自宾。
+          天地相合，以降甘露，民莫之令而自均。
+          始制有名，名亦既有，夫亦将知止，知止可以不殆。
+          譬道之在天下，犹川谷之于江海。
+        </p>
+      </div>
+      <h1>第三十一章</h1>
+      <div>
+        <p>
+          夫兵者，不祥之器，物或恶之，故有道者不处。
+          君子居则贵左，用兵则贵右。兵者不祥之器，非君子之器，不得已而用之，恬淡为上。
+          胜而不美，而美之者，是乐杀人。夫乐杀人者，则不可得志于天下矣。
+          吉事尚左，凶事尚右。偏将军居左，上将军居右，言以丧礼处之。杀人之众，以悲哀泣之，战胜以丧礼处之。
+        </p>
+      </div>
+
+      <h1>第三十章</h1>
+      <div>
+        <p>
+          以道佐人主者，不以兵强天下。其事好远。师之所处，荆棘生焉。大军之后，必有凶年。善有果而已，不以取强。果而勿矜，果而勿伐，果而勿骄。果而不得已，果而勿强。物壮则老，是谓不道，不道早已。
+        </p>
+      </div>
+      <h1>第二十九章</h1>
+      <div>
+        <p>
+          将欲取天下而为之，吾见其不得已。天下神器，不可为也，不可执也。为者败之，执者失之。是以圣人无为，故无败；无执，故无失。夫物或行或随；或嘘或吹；或强或羸；或载或隳。是以圣人去甚，去奢，去泰。
+        </p>
+      </div>
+      <h1>第二十八章</h1>
+      <div>
+        <p>
+          知其雄，守其雌，为天下溪。为天下溪，常德不离，复归于婴儿。知其白，守其辱，为天下谷。为天下谷，常德乃足，复归于朴。知其白，守其黑，为天下式。为天下式，常德不忒，复归于无极。朴散则为器，圣人用之，则为官长，故大智不割。
+        </p>
+      </div>
+      <h1>第二十七章</h1>
+      <div>
+        <p>
+          善行无辙迹，善言无瑕谪；善数不用筹策；善闭无关楗而不可开，善结无绳约而不可解。是以圣人常善救人，故无弃人；常善救物，故无弃物。是谓袭明。故善人者，不善人之师；不善人者，善人之资。不贵其师，不爱其资，虽智大迷，是谓要妙。
+        </p>
+      </div>
+      <h1>第二十六章</h1>
+      <div>
+        <p>
+          重为轻根，静为躁君。是以君子终日行不离辎重。虽有荣观，燕处超然。奈何万乘之主，而以身轻天下？轻则失根，躁则失君。
+        </p>
+      </div>
+      <h1>第二十五章</h1>
+      <button id="printSection1">Print Section 1</button>
+      <div id="section1">
+        <p>
+          有物混成，先天地生。寂兮寥兮，独立而不改，周行而不殆，可以为天地母。吾不知其名，强字之曰道，强为之名曰大。大曰逝，逝曰远，远曰反。故道大，天大，地大，人亦大。域中有四大，而人居其一焉。人法地，地法天，天法道，道法自然。
+        </p>
+      </div>
+      <h1>第二十四章</h1>
+      <div>
+        <p>
+          企者不立；跨者不行；自见者不明；自是者不彰；自伐者无功；自矜者不长。其在道也，曰：馀食赘形。物或恶之，故有道者不处。
+        </p>
+      </div>
+      <h1>第二十三章</h1>
+      <div>
+        <p>
+          希言自然。故飘风不终朝，骤雨不终日。孰为此者？天地。天地尚不能久，而况于人乎？故从事于道者，同于道；德者，同于德；失者，同于失。同于道者，道亦乐得之；同于德者，德亦乐得之；同于失者，失亦乐得之。信不足焉，有不信焉。
+        </p>
+      </div>
+
+      <h1>第二十二章</h1>
+      <div>
+        <p>
+          曲则全，枉则直，洼则盈，敝则新，少则多，多则惑。是以圣人抱一为天下式。不自见，故明；不自是，故彰；不自伐，故有功；不自矜，故长。夫唯不争，故天下莫能与之争。古之所谓“曲则全”者，岂虚言哉！诚全而归之。
+        </p>
+      </div>
+      <h1>第二十一章</h1>
+      <div>
+        <p>
+          孔德之容，惟道是从。道之为物，惟恍惟惚。惚兮恍兮，其中有象；恍兮惚兮，其中有物。窈兮冥兮，其中有精；其精甚真，其中有信。自今及古，其名不去，以阅众甫。吾何以知众甫之状哉？以此。
+        </p>
+      </div>
+
+      <h1>第二十章</h1>
+      <div>
+        <p>唯之与阿，相去几何？美之与恶，相去若何？人之所畏，不可不畏。</p>
+        <p>荒兮，其未央哉！众人熙熙，如享太牢，如春登台。</p>
+        <p>我独泊兮，其未兆；沌沌兮，如婴儿之未孩；累累兮，若无所归。</p>
+        <p>众人皆有馀，而我独若遗。我愚人之心也哉！俗人昭昭，我独昏昏。</p>
+        <p>
+          俗人察察，我独闷闷。众人皆有以，而我独顽且鄙。我独异于人，而贵食母。
+        </p>
+      </div>
+      <h1>第十九章</h1>
+      <div>
+        <p>
+          绝圣弃智，民利百倍；绝仁弃义，民复孝慈；绝巧弃利，盗贼无有。此三者以为文，不足。故令有所属：见素抱朴，少思寡欲，绝学无忧。
+        </p>
+      </div>
+      <h1>第十八章</h1>
+      <div>
+        <p>
+          大道废，有仁义；智慧出，有大伪；六亲不和，有孝慈；国家昏乱，有忠臣。
+        </p>
+      </div>
+      <h1>第十七章</h1>
+      <div>
+        <p>
+          太上，不知有之；其次，亲而誉之；其次，畏之；其次，侮之。信不足焉，有不信焉。
+        </p>
+        <p>悠兮其贵言。功成事遂，百姓皆谓：“我自然”。</p>
+        <h1>第十六章</h1>
+      </div>
+      <div>
+        <p>致虚极，守静笃。</p>
+        <p>万物并作，吾以观复。</p>
+        <p>
+          夫物芸芸，各复归其根。归根曰静，静曰复命。复命曰常，知常曰明。不知常，妄作凶。
+        </p>
+        <p>知常容，容乃公，公乃全，全乃天，天乃道，道乃久，没身不殆。</p>
+      </div>
+      <h1>第十五章</h1>
+      <div>
+        <p>
+          古之善为道者，微妙玄通，深不可识。夫唯不可识，故强为之容：豫兮若冬涉川；犹兮若畏四邻；俨兮其若客；涣兮其若凌释；敦兮其若朴；旷兮其若谷；混兮其若浊；澹兮其若海；兮若无止。
+        </p>
+        <ul></ul>
+        <p>孰能浊以静之徐清？孰能安以动之徐生？</p>
+        <p>保此道者，不欲盈。夫唯不盈，故能蔽而新成。</p>
+      </div>
+      <h1>第十四章</h1>
+      <div>
+        <p>
+          视之不见，名曰夷；听之不闻，名曰希；搏之不得，名曰微。此三者不可致诘，故混而为一。其上不皦，其下不昧。绳绳兮不可名，复归于物。是谓无状之状，无物之象，是谓惚恍。迎之不见其首，随之不见其后。
+        </p>
+        <p>执古之道，以御今之有。能知古始，是谓道纪。</p>
+      </div>
+      <h1>第十三章</h1>
+      <div>
+        <p>宠辱若惊，贵大患若身。</p>
+        <p>何谓宠辱若惊？宠为下，得之若惊，失之若惊，是谓宠辱若惊。</p>
+        <p>何谓贵大患若身？吾所以有大患者，为吾有身，及吾无身，吾有何患？</p>
+        <p>故贵以身为天下，若可寄天下；爱以身为天下，若可托天下。</p>
+      </div>
+      <h1>第十二章</h1>
+      <div>
+        <p>五色令人目盲；</p>
+        <p>五音令人耳聋；</p>
+        <p>五味令人口爽；</p>
+        <p>驰骋畋猎，令人心发狂；</p>
+        <p>难得之货，令人行妨。</p>
+        <p>是以圣人为腹不为目，故去彼取此。</p>
+      </div>
+      <h1>第十一章</h1>
+      <div>
+        <p>三十辐，共一毂，当其无，有车之用。</p>
+        <p>埏埴以为器，当其无，有器之用。</p>
+        <p>凿户牖以为室，当其无，有室之用。</p>
+        <p>故有之以为利，无之以为用。</p>
+      </div>
+      <h1>第十章</h1>
+      <div>
+        <p>载营魄抱一，能无离乎？</p>
+        <p>专气致柔，能如婴儿乎？</p>
+        <p>涤除玄鉴，能如疵乎？</p>
+        <p>爱国治民，能无为乎？</p>
+        <p>天门开阖，能为雌乎？</p>
+        <p>明白四达，能无知乎？</p>
+      </div>
+      <h1>你是风儿我是沙</h1>
+    </div>
+    <script>
+      // Get the <p> element
+      var div = document.querySelector(".page");
+      var paragraphs = div.querySelectorAll("p");
+
+      paragraphs.forEach(function (paragraph) {
+        // Get the text content of the paragraph
+        const textContent = paragraph.textContent;
+        var ul = document.createElement("ul");
+        // Loop through each character in the text
+        for (let i = 0; i < textContent.length; i++) {
+          // Create a new <li> element
+          const listItem = document.createElement("li");
+
+          if (textContent[i].trim().length != 0) {
+            // Set the text content of the <li> element to the current character
+            listItem.textContent = textContent[i];
+            // Append the <li> element to the <ul> element
+            ul.appendChild(listItem);
+          }
+        }
+        paragraph.parentNode.replaceChild(ul, paragraph);
+      });
+      const printButton = document.getElementById(`printSection1`);
+      printButton.addEventListener("click", () => {
+        const sectionName = `section1`;
+        const sectionContent = document.getElementById("section1").innerHTML;
+        if (sectionContent) {
+          // Create a new window or iframe for printing
+          const printWindow = window.open("", "_blank");
+          printWindow.document.open();
+          printWindow.document.write(`${sectionContent}`);
+          printWindow.document.close();
+          printWindow.print();
+          printWindow.close();
+        }
+      });
+    </script>
+  </body>
 </html>
