@@ -7,3 +7,20 @@
     font-display: swap;
 }
 
+@font-face {
+    font-family: 'JXP';
+    src: url('JXP-.woff2') format('woff2'),
+        url('JXP-.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'JxpKaiTi';
+    src: url('KaiTi.woff2') format('woff2'),
+        url('KaiTi.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
