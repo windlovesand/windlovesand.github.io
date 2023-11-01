@@ -7,8 +7,7 @@
     <meta name="robots" content="noindex, noarchive" />
     <meta name="format-detection" content="telephone=no" />
     <title>道德经</title>
-    <link href="stylesheet.css" rel="stylesheet" />
-    <link rel="preload" href="JXP-.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" type="text/css" href="style-jxp.css" id="dynamic-style">
     <style>
       /*
         http://meyerweb.com/eric/tools/css/reset/
@@ -254,7 +253,7 @@
       }
 
       .page div {
-        font-family: "JxpKaiTi";
+        font-family: "kaiTi";
         font-size: 30px;
         font-weight: normal;
         font-style: normal;
@@ -262,7 +261,7 @@
       }
 
       .page h1 {
-        font-family: "JxpKaiTi";
+        font-family: "kaiTi";
         font-weight: normal;
         font-style: normal;
       }
@@ -510,6 +509,22 @@
           printWindow.close();
         }
       });
+      window.addEventListener('DOMContentLoaded', () => {
+        const dynamicStyle = document.getElementById('dynamic-style');
+        const urlParams = new URLSearchParams(window.location.search);
+    
+        // Check if a "style" parameter is present in the URL
+        if (urlParams.has('style')) {
+          const styleParam = urlParams.get('style');
+          console.log(styleParam)
+          switch (styleParam) {
+            case 'tyz':
+              dynamicStyle.href = 'style-tyz.css';
+              break;
+            // Add more cases for additional styles as needed
+          }
+        }
+      });      
     </script>
   </body>
 </html>
