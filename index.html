@@ -10,285 +10,16 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="style-jxp.css"
+      href="style-tyz.css"
       id="dynamic-style"
     />
-    <style>
-      /*
-        http://meyerweb.com/eric/tools/css/reset/
-        v2.0 | 20110126
-        License: none (public domain)
-        */
-      html,
-      body,
-      div,
-      span,
-      applet,
-      object,
-      iframe,
-      h1,
-      h2,
-      h3,
-      h4,
-      h5,
-      h6,
-      p,
-      blockquote,
-      pre,
-      a,
-      abbr,
-      acronym,
-      address,
-      big,
-      cite,
-      code,
-      del,
-      dfn,
-      em,
-      img,
-      ins,
-      kbd,
-      q,
-      s,
-      samp,
-      small,
-      strike,
-      strong,
-      sub,
-      sup,
-      tt,
-      var,
-      b,
-      u,
-      i,
-      center,
-      dl,
-      dt,
-      dd,
-      ol,
-      ul,
-      li,
-      fieldset,
-      form,
-      label,
-      legend,
-      table,
-      caption,
-      tbody,
-      tfoot,
-      thead,
-      tr,
-      th,
-      td,
-      article,
-      aside,
-      canvas,
-      details,
-      embed,
-      figure,
-      figcaption,
-      footer,
-      header,
-      hgroup,
-      menu,
-      nav,
-      output,
-      ruby,
-      section,
-      summary,
-      time,
-      mark,
-      audio,
-      video {
-        margin: 0;
-        padding: 0;
-        border: 0;
-        font-size: 100%;
-        font: inherit;
-        vertical-align: baseline;
-      }
-
-      /* HTML5 display-role reset for older browsers */
-      article,
-      aside,
-      details,
-      figcaption,
-      figure,
-      footer,
-      header,
-      hgroup,
-      menu,
-      nav,
-      section {
-        display: block;
-      }
-
-      body {
-        line-height: 1;
-      }
-
-      ol,
-      ul {
-        list-style: none;
-      }
-
-      blockquote,
-      q {
-        quotes: none;
-      }
-
-      blockquote:before,
-      blockquote:after,
-      q:before,
-      q:after {
-        content: "";
-        content: none;
-      }
-
-      table {
-        border-collapse: collapse;
-        border-spacing: 0;
-      }
-
-      /* demo styles */
-      body {
-        background: #f0f0f0;
-        color: #000;
-      }
-
-      .page {
-        background: #fff;
-        width: 920px;
-        margin: 0 auto;
-        padding: 20px 20px 0 20px;
-        overflow: hidden;
-      }
-
-      .font-container {
-        overflow-x: auto;
-        margin-bottom: 40px;
-        line-height: 1.3;
-        white-space: nowrap;
-        padding-bottom: 5px;
-      }
-
-      h1 {
-        position: relative;
-        background: #444;
-        font-size: 32px;
-        color: #fff;
-        padding: 10px 20px;
-        margin: 0 -20px 12px -20px;
-      }
-
-      .letters {
-        font-size: 25px;
-        margin-bottom: 20px;
-      }
-
-      .s10:before {
-        content: "10px";
-      }
-
-      .s11:before {
-        content: "11px";
-      }
-
-      .s12:before {
-        content: "12px";
-      }
-
-      .s14:before {
-        content: "14px";
-      }
-
-      .s18:before {
-        content: "18px";
-      }
-
-      .s24:before {
-        content: "24px";
-      }
-
-      .s30:before {
-        content: "30px";
-      }
-
-      .s36:before {
-        content: "36px";
-      }
-
-      .s48:before {
-        content: "48px";
-      }
-
-      .s60:before {
-        content: "60px";
-      }
-
-      .s72:before {
-        content: "72px";
-      }
-
-      .s10:before,
-      .s11:before,
-      .s12:before,
-      .s14:before,
-      .s18:before,
-      .s24:before,
-      .s30:before,
-      .s36:before,
-      .s48:before,
-      .s60:before,
-      .s72:before {
-        font-family: Arial, sans-serif;
-        font-size: 10px;
-        font-weight: normal;
-        font-style: normal;
-        color: #999;
-        padding-right: 6px;
-      }
-
-      /* responsive */
-      @media (max-width: 959px) {
-        .page {
-          width: auto;
-          margin: 0;
-        }
-      }
-
-      .page div {
-        font-family: "kaiTi";
-        font-size: 30px;
-        font-weight: normal;
-        font-style: normal;
-        line-height: 1.3;
-      }
-
-      .page h1 {
-        font-family: "kaiTi";
-        font-weight: normal;
-        font-style: normal;
-      }
-
-      .page div li {
-        background: url(bg12.svg) center center no-repeat;
-        color: rgb(0, 0, 0);
-        display: inline-block;
-        width: 80px;
-        height: 80px;
-        font-size: 58px;
-        text-align: center;
-        line-height: 80px;
-        margin: 5px 0px 5px -2px;
-      }
-    </style>
+    <link rel="stylesheet" type="text/css" href="style.css" />
   </head>
-
   <body>
     <div class="page">
       <h1>第四十五章</h1>
-      <div>
+      <button id="printSection1">Print Section 1</button>
+      <div id="section1">
         <p>
           大成若缺，其用不弊。 大盈若冲，其用不穷。
           大直若屈，大巧若拙，大辩若讷。 静胜躁，寒胜热。清静为天下正。
@@ -426,8 +157,7 @@
         </p>
       </div>
       <h1>第二十五章</h1>
-      <button id="printSection1">Print Section 1</button>
-      <div id="section1">
+      <div>
         <p>
           有物混成，先天地生。寂兮寥兮，独立而不改，周行而不殆，可以为天地母。吾不知其名，强字之曰道，强为之名曰大。大曰逝，逝曰远，远曰反。故道大，天大，地大，人亦大。域中有四大，而人居其一焉。人法地，地法天，天法道，道法自然。
         </p>
@@ -544,7 +274,6 @@
         <p>天门开阖，能为雌乎？</p>
         <p>明白四达，能无知乎？</p>
       </div>
-      <h1>你是风儿我是沙</h1>
     </div>
     <script>
       // Get the <p> element
@@ -577,7 +306,18 @@
           // Create a new window or iframe for printing
           const printWindow = window.open("", "_blank");
           printWindow.document.open();
+          printWindow.document.write("<html><head>");
+          printWindow.document.write(
+            '<link rel="stylesheet"  type="text/css" href="style-tyz.css"  id="dynamic-style"/>'
+          );
+          printWindow.document.write(
+            '<link rel="stylesheet" type="text/css" href="style.css" />'
+          );
+          printWindow.document.write("</head><body>");
+          printWindow.document.write('<div class="page">');
           printWindow.document.write(`${sectionContent}`);
+          printWindow.document.write("</div>");
+          printWindow.document.write("</body></html>");
           printWindow.document.close();
           printWindow.print();
           printWindow.close();

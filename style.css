@@ -1,11 +1,101 @@
-@font-face {
-    font-family: "tyzZiti";
-    src: url(田英章硬笔楷书简体.ttf) format('truetype');
-}
-  
-p {
-    font-family: "tyzZiti";
-    /*font-family: TYZyingbikai;*/
-    color: black;
+div ul {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
 
+body {
+    line-height: 1;
+}
+
+ol,
+ul {
+    list-style: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: "";
+    content: none;
+}
+
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+/* demo styles */
+body {
+    background: #f0f0f0;
+    color: #000;
+}
+
+.page {
+    background: #fff;
+    width: 920px;
+    margin: 0 auto;
+    padding: 20px 20px 0 20px;
+    overflow: hidden;
+}
+
+.font-container {
+    overflow-x: auto;
+    margin-bottom: 40px;
+    line-height: 1.3;
+    white-space: nowrap;
+    padding-bottom: 5px;
+}
+
+h1 {
+    position: relative;
+    background: #444;
+    font-size: 32px;
+    color: #fff;
+    padding: 10px 20px;
+    margin: 0 -20px 12px -20px;
+}
+
+/* responsive */
+@media (max-width: 959px) {
+    .page {
+        width: auto;
+        margin: 0;
+    }
+}
+
+.page div {
+    font-family: "kaiTi";
+    font-size: 30px;
+    font-weight: normal;
+    font-style: normal;
+    line-height: 1.3;
+}
+
+.page h1 {
+    font-family: "kaiTi";
+    font-weight: normal;
+    font-style: normal;
+}
+
+.page div li {
+    background: url(bg12.svg) center center no-repeat;
+    color: rgb(0, 0, 0);
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    font-size: 58px;
+    text-align: center;
+    line-height: 80px;
+    margin: 5px 0px 5px -2px;
+}
+
+@media print {
+    li {
+        -webkit-print-color-adjust: exact;
+    }
+}
