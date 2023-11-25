@@ -293,6 +293,12 @@
             listItem.textContent = textContent[i];
             // Append the <li> element to the <ul> element
             ul.appendChild(listItem);
+            {
+              const listItem = document.createElement("li");
+              listItem.classList.add("emptyLi");
+              // Append the <li> element to the <ul> element
+              ul.appendChild(listItem);
+            }
           }
         }
         paragraph.parentNode.replaceChild(ul, paragraph);

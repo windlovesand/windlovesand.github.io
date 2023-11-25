@@ -14,6 +14,7 @@ body {
 ol,
 ul {
     list-style: none;
+    text-align: center;
 }
 
 blockquote:before,
@@ -83,7 +84,7 @@ h1 {
 }
 
 .page div li {
-    background: url(bg12.svg) center center no-repeat;
+    background: url(bg12.svg) left center no-repeat;
     color: rgb(0, 0, 0);
     display: inline-block;
     width: 80px;
@@ -92,8 +93,12 @@ h1 {
     text-align: center;
     line-height: 80px;
     margin: 5px 0px 5px -2px;
+    border: 1px solid black;
 }
 
+.emptyLi {
+    margin: 15px 0px 15px -2px;;
+}
 @media print {
     li {
         -webkit-print-color-adjust: exact;
