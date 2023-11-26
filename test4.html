@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>田字格字帖生成器</title>
+    <style>
+      body,
+      div,
+      p,
+      ul,
+      li {
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        font-size: 0;
+      }
+
+      div {
+        width: 958px;
+        margin: 0 auto;
+        padding-left: 2px;
+      }
+
+      li {
+        display: inline-block;
+        width: 80px;
+        margin: 12px 0px 12px -2px;
+      }
+
+      li.f {
+        margin-left: 0px;
+      }
+
+      li span.py-box {
+        display: inline-block;
+        width: 80px;
+        height: 49px;
+        font-family: "宋体", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-size: 30px;
+        text-align: center;
+        line-height: 46px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI1MXB4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+CjxwYXRoIGQ9Ik0wIDEgTDgwIDEiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSIjMTExIiBmaWxsLW9wYWNpdHk9IjAiLz4KPHBhdGggZD0iTTAgNTAgTDgwIDUwIiBzdHJva2Utd2lkdGg9IjIiIHN0cm9rZT0iIzExMSIgZmlsbC1vcGFjaXR5PSIwIi8+Cgo8cGF0aCBkPSJNMCAxOCBMODAgMTgiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiM2NjYiIGZpbGwtb3BhY2l0eT0iMCIvPgo8cGF0aCBkPSJNMCAzNCBMODAgMzQiIHN0cm9rZS1kYXNoYXJyYXk9IjUsNSIgc3Ryb2tlLXdpZHRoPSIxIiBzdHJva2U9IiM2NjYiIGZpbGwtb3BhY2l0eT0iMCIvPgo8L3N2Zz4=)
+          left center no-repeat;
+        color: #888888;
+      }
+
+      li span.hz-box {
+        display: inline-block;
+        font-family: "楷体", "楷体_gb2312", "Kaiti SC", STKaiti, "AR PL UKai CN",
+          "AR PL UKai HK", "AR PL UKai TW", "AR PL UKai TW MBE",
+          "AR PL KaitiM GB", KaiTi, KaiTi_GB2312, DFKai-SB, "TW\-Kai";
+        font-size: 58px;
+        line-height: 85px;
+        text-align: center;
+        width: 80px;
+        height: 80px;
+        background: url(data:image/svg+xml;base64,PHN2ZyB3aWR0aD0iODBweCIgaGVpZ2h0PSI4MHB4IiB2ZXJzaW9uPSIxLjEiIHhtbG5zPSJodHRwOi8vd3d3LnczLm9yZy8yMDAwL3N2ZyI+Cgo8cGF0aCBkPSJNLTIgNDAgTDgwIDQwIiBzdHJva2UtZGFzaGFycmF5PSI0LDQiIHN0cm9rZS13aWR0aD0iMSIgc3Ryb2tlPSIjNjY2IiBmaWxsLW9wYWNpdHk9IjAiLz4KPHBhdGggZD0iTTQwIC0yIEw0MCA4MCIgc3Ryb2tlLWRhc2hhcnJheT0iNCw0IiBzdHJva2Utd2lkdGg9IjEiIHN0cm9rZT0iIzY2NiIgZmlsbC1vcGFjaXR5PSIwIi8+CjxwYXRoIGQ9Ik0xIDEgbDc4IDAgbDAgNzggbC03OCAwIFoiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlPSIjMTExIiBmaWxsLW9wYWNpdHk9IjAiLz4KCjwvc3ZnPg==)
+          left center no-repeat;
+        color: #888888;
+        margin-top: -2px;
+      }
+
+      li span.svg {
+        line-height: 71px;
+      }
+
+      li svg {
+        vertical-align: middle;
+      }
+
+      li.f span {
+        color: #000;
+      }
+
+      .afterpage {
+        page-break-before: always;
+      }
+
+      .page-head {
+        height: 116px;
+        line-height: 136px;
+        font-size: 32px;
+        text-align: center;
+        display: none;
+        color: #666666;
+      }
+
+      @media print {
+        .afterpage {
+          page-break-before: always;
+        }
+
+        .page-head {
+          display: block;
+        }
+      }
+
+      @page {
+        size: auto;
+        margin: 5mm 16mm 5mm 16mm;
+      }
+    </style>
+  </head>
+
+  <body>
+    <div>
+      <ul>
+        <li><span class="py-box">tā</span><span class="hz-box">他</span></li>
+        <li><span class="py-box">wēi</span><span class="hz-box"> </span></li>
+        <li><span class="py-box">yán</span><span class="hz-box">严</span></li>
+        <li><span class="py-box">ér</span><span class="hz-box">而</span></li>
+        <li><span class="py-box">zì</span><span class="hz-box">自</span></li>
+        <li><span class="py-box">yóu</span><span class="hz-box">由</span></li>
+        <li><span class="py-box">dì</span><span class="hz-box">地</span></li>
+        <li><span class="py-box">gāo</span><span class="hz-box">高</span></li>
+        <li><span class="py-box">áng</span><span class="hz-box">昂</span></li>
+        <li><span class="py-box">zhe</span><span class="hz-box">着</span></li>
+        <li><span class="py-box">jiāo</span><span class="hz-box">骄</span></li>
+        <li><span class="py-box">ào</span><span class="hz-box">傲</span></li>
+        <li><span class="py-box">de</span><span class="hz-box">的</span></li>
+        <li><span class="py-box">tóu</span><span class="hz-box">头</span></li>
+        <li><span class="py-box">lú</span><span class="hz-box">颅</span></li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">，</span>
+        </li>
+        <li><span class="py-box">chóng</span><span class="hz-box">重</span></li>
+        <li><span class="py-box">xīn</span><span class="hz-box">新</span></li>
+        <li><span class="py-box">mài</span><span class="hz-box">迈</span></li>
+        <li><span class="py-box">kāi</span><span class="hz-box">开</span></li>
+        <li><span class="py-box">cóng</span><span class="hz-box">从</span></li>
+        <li><span class="py-box">róng</span><span class="hz-box">容</span></li>
+        <li><span class="py-box">ér</span><span class="hz-box">而</span></li>
+        <li><span class="py-box">jiān</span><span class="hz-box">坚</span></li>
+        <li><span class="py-box">dìng</span><span class="hz-box">定</span></li>
+        <li><span class="py-box">de</span><span class="hz-box">的</span></li>
+        <li><span class="py-box">bù</span><span class="hz-box">步</span></li>
+        <li><span class="py-box">fá</span><span class="hz-box">伐</span></li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">，</span>
+        </li>
+        <li><span class="py-box">tà</span><span class="hz-box">踏</span></li>
+        <li><span class="py-box">zhe</span><span class="hz-box">着</span></li>
+        <li><span class="py-box">yǐ</span><span class="hz-box">已</span></li>
+        <li><span class="py-box">huà</span><span class="hz-box">化</span></li>
+        <li><span class="py-box">wéi</span><span class="hz-box">为</span></li>
+        <li><span class="py-box">huī</span><span class="hz-box">灰</span></li>
+        <li><span class="py-box">jìn</span><span class="hz-box">烬</span></li>
+        <li><span class="py-box">de</span><span class="hz-box">的</span></li>
+        <li><span class="py-box">chén</span><span class="hz-box">陈</span></li>
+        <li><span class="py-box">fǔ</span><span class="hz-box">腐</span></li>
+        <li><span class="py-box">piān</span><span class="hz-box">偏</span></li>
+        <li><span class="py-box">jiàn</span><span class="hz-box">见</span></li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">，</span>
+        </li>
+        <li><span class="py-box">dú</span><span class="hz-box">独</span></li>
+        <li><span class="py-box">zì</span><span class="hz-box">自</span></li>
+        <li><span class="py-box">zài</span><span class="hz-box">在</span></li>
+        <li><span class="py-box">zhǒng</span><span class="hz-box">种</span></li>
+        <li><span class="py-box">zhǒng</span><span class="hz-box">种</span></li>
+        <li><span class="py-box">miù</span><span class="hz-box">谬</span></li>
+        <li><span class="py-box">wù</span><span class="hz-box">误</span></li>
+        <li><span class="py-box">gòu</span><span class="hz-box">构</span></li>
+        <li><span class="py-box">chéng</span><span class="hz-box">成</span></li>
+        <li><span class="py-box">de</span><span class="hz-box">的</span></li>
+        <li><span class="py-box">huī</span><span class="hz-box">灰</span></li>
+        <li><span class="py-box">bái</span><span class="hz-box">白</span></li>
+        <li><span class="py-box">sè</span><span class="hz-box">色</span></li>
+        <li><span class="py-box">de</span><span class="hz-box">的</span></li>
+        <li><span class="py-box">mí</span><span class="hz-box">迷</span></li>
+        <li><span class="py-box">wù</span><span class="hz-box">雾</span></li>
+        <li><span class="py-box">lǐ</span><span class="hz-box">里</span></li>
+        <li><span class="py-box">qián</span><span class="hz-box">前</span></li>
+        <li><span class="py-box">jìn</span><span class="hz-box">进</span></li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">。</span>
+        </li>
+        <li><span class="py-box">tā</span><span class="hz-box">他</span></li>
+        <li><span class="py-box">shēn</span><span class="hz-box">身</span></li>
+        <li><span class="py-box">hòu</span><span class="hz-box">后</span></li>
+        <li><span class="py-box">shì</span><span class="hz-box">是</span></li>
+        <li><span class="py-box">chén</span><span class="hz-box">沉</span></li>
+        <li><span class="py-box">zhòng</span><span class="hz-box">重</span></li>
+        <li><span class="py-box">de</span><span class="hz-box">的</span></li>
+        <li><span class="py-box">wū</span><span class="hz-box">乌</span></li>
+        <li><span class="py-box">yún</span><span class="hz-box">云</span></li>
+        <li><span class="py-box">bān</span><span class="hz-box">般</span></li>
+        <li><span class="py-box">de</span><span class="hz-box">的</span></li>
+        <li><span class="py-box">jiù</span><span class="hz-box">旧</span></li>
+        <li><span class="py-box">rì</span><span class="hz-box">日</span></li>
+        <li><span class="py-box">de</span><span class="hz-box">的</span></li>
+        <li><span class="py-box">huī</span><span class="hz-box">灰</span></li>
+        <li><span class="py-box">chén</span><span class="hz-box">尘</span></li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">，</span>
+        </li>
+        <li><span class="py-box">ér</span><span class="hz-box">而</span></li>
+        <li><span class="py-box">qián</span><span class="hz-box">前</span></li>
+        <li><span class="py-box">miàn</span><span class="hz-box">面</span></li>
+        <li><span class="py-box">zé</span><span class="hz-box">则</span></li>
+        <li><span class="py-box">shì</span><span class="hz-box">是</span></li>
+        <li><span class="py-box">mò</span><span class="hz-box">漠</span></li>
+        <li><span class="py-box">rán</span><span class="hz-box">然</span></li>
+        <li><span class="py-box">děng</span><span class="hz-box">等</span></li>
+        <li><span class="py-box">dài</span><span class="hz-box">待</span></li>
+        <li><span class="py-box">zhe</span><span class="hz-box">着</span></li>
+        <li><span class="py-box">tā</span><span class="hz-box">他</span></li>
+        <li><span class="py-box">de</span><span class="hz-box">的</span></li>
+        <li><span class="py-box">wú</span><span class="hz-box">无</span></li>
+        <li><span class="py-box">shù</span><span class="hz-box">数</span></li>
+        <li><span class="py-box">de</span><span class="hz-box">的</span></li>
+        <li><span class="py-box">mí</span><span class="hz-box">谜</span></li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">。</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+        <li>
+          <span class="py-box">&nbsp;</span><span class="hz-box">&nbsp;</span>
+        </li>
+      </ul>
+    </div>
+  </body>
+</html>

@@ -282,17 +282,32 @@
       paragraphs.forEach(function (paragraph) {
         // Get the text content of the paragraph
         const textContent = paragraph.textContent;
-        var ul = document.createElement("ul");
+        var ul = document.createElement("div");
+        ul.classList.add("line");
         // Loop through each character in the text
         for (let i = 0; i < textContent.length; i++) {
           // Create a new <li> element
-          const listItem = document.createElement("li");
+          const listItem = document.createElement("div");
 
           if (textContent[i].trim().length != 0) {
             // Set the text content of the <li> element to the current character
             listItem.textContent = textContent[i];
+            listItem.classList.add("box");
+
             // Append the <li> element to the <ul> element
             ul.appendChild(listItem);
+            if (
+              textContent[i] != "，" &&
+              textContent[i] != "。" &&
+              textContent[i] != "？" &&
+              textContent[i] != "、"
+            ) {
+              const listItem = document.createElement("div");
+              listItem.classList.add("box");
+              listItem.classList.add("empty");
+              // Append the <li> element to the <ul> element
+              ul.appendChild(listItem);
+            }
           }
         }
         paragraph.parentNode.replaceChild(ul, paragraph);
