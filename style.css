@@ -52,7 +52,7 @@ body {
   padding-bottom: 5px;
 }
 
-h1 {
+h2 {
   position: relative;
   background: #444;
   font-size: 32px;
@@ -78,10 +78,15 @@ h1 {
   line-height: 1.3;
 }
 
-.page h1 {
+.page h2 {
   font-family: "kaiTi";
   font-weight: normal;
   font-style: normal;
+}
+.page h1 {
+  font-size: 200px;
+  font-family: "kaiTi";
+  text-align: center;
 }
 
 .page div li {
@@ -141,5 +146,15 @@ h1 {
 @media screen {
   .page div .empty {
     display: none;
+  }
+}
+
+@media print {
+  div.centerOnPrintedPage {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
   }
 }
