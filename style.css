@@ -83,7 +83,7 @@ h2 {
   font-weight: normal;
   font-style: normal;
 }
-.page h1 {
+.page .centerOnPrintedPage h1 {
   font-size: 200px;
   font-family: "kaiTi";
   text-align: center;
